@@ -47,8 +47,7 @@
 
         <div class="banner-texto">
 
-            <h2>Jesus Cristo é o Caminho, a Verdade e a Vida</h2>
-
+            
             <p>
                 Seja muito bem-vindo à Igreja Batista Fé e Vida.
                 Um lugar de fé, amor, comunhão e transformação.
@@ -176,26 +175,26 @@
                     <br>
 
                     <a href="https://play.google.com/store/apps/details?id=edgar.santos542026"
-                       target="_blank"
-                       class="botao">
+   target="_blank"
+   class="botao">
 
-                        BAIXAR NA PLAY STORE
+    BAIXAR NA PLAY STORE
 
-                    </a>
+</a>
 
-                </div>
+</div>
 
-                <div class="card">
+<div class="card">
 
-                    <h3>🎙 Programação</h3>
+    <h3>🎙 Programação</h3>
 
-                    <p>🎵 Louvores</p>
-                    <p>📖 Estudos Bíblicos</p>
-                    <p>🙏 Oração</p>
-                    <p>🎙 Pregações</p>
-                    <p>📡 Ao Vivo</p>
+    <p>Louvores</p>
+    <p>Pregações</p>
+    <p>Estudos Bíblicos</p>
+    <p>Oração</p>
+    <p>Transmissões ao Vivo</p>
 
-                </div>
+</div>
 
             </div>
 
@@ -209,17 +208,13 @@
 
             <form>
 
-                <input type="text" placeholder="Seu nome">
+                <input type="text" placeholder="Seu nome" required>
 
-                <input type="email" placeholder="Seu e-mail">
+                <input type="email" placeholder="Seu e-mail" required>
 
-                <textarea rows="6" placeholder="Escreva aqui seu pedido de oração"></textarea>
+                <textarea rows="6" placeholder="Escreva aqui seu pedido de oração" required></textarea>
 
-                <button type="submit">
-
-                    Enviar Pedido
-
-                </button>
+                <button type="submit">Enviar Pedido</button>
 
             </form>
 
@@ -235,10 +230,8 @@
 
             <p>
                 Avenida Dorival Caymmi, 23<br>
-                Itapuã - Salvador/BA
+                Itapuã - Salvador / BA
             </p>
-
-            <br>
 
             <p><strong>📱 WhatsApp:</strong></p>
 
@@ -252,8 +245,6 @@
 
     </main>
 
-    <!-- RODAPÉ -->
-
     <footer>
 
         <p>© 2026 Igreja Batista Fé e Vida</p>
@@ -261,8 +252,6 @@
         <p>Todos os direitos reservados.</p>
 
     </footer>
-
-    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
 
     <a href="https://wa.me/5571988375157"
        class="whatsapp"
@@ -273,7 +262,30 @@
 
     </a>
 
+    <!-- Música de Fundo -->
+
+    <audio id="musicaFundo" autoplay loop>
+        <source src="audio/fundo.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
     <script src="script.js"></script>
+
+    <script>
+
+        const musica = document.getElementById("musicaFundo");
+
+        musica.volume = 0.15;
+        musica.loop = true;
+
+        function iniciarMusica() {
+            musica.play().catch(() => {});
+        }
+
+        window.addEventListener("load", iniciarMusica);
+        document.addEventListener("click", iniciarMusica, { once: true });
+
+    </script>
 
 </body>
 
