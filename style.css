@@ -546,3 +546,13 @@ html{
         transform:scale(1);
     }
 }
+#chavePix{
+    font-size:22px;
+    font-weight:bold;
+    color:#FFD700;
+    background:#002b5c;
+    padding:12px;
+    border-radius:8px;
+    margin:15px 0;
+    text-align:center;
+}
