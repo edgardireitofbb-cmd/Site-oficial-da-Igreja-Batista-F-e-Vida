@@ -268,25 +268,77 @@
         <source src="audio/fundo.mp3" type="audio/mpeg">
         Seu navegador não suporta áudio.
     </audio>
+    <!-- ================= IA FE E VIDA ================= -->
+
+<div id="iaChamada">
+    Eu sou o Pastor IA.<br>
+    Posso ajudar!
+</div>
+
+<div id="iaBotao">🤖</div>
+
+<div id="iaJanela">
+
+    <div id="iaTopo">
+        Assistente Fé e Vida
+        <span id="fecharIA">✖</span>
+    </div>
+
+    <div id="iaMensagens">
+
+        <div class="iaMensagem">
+            🙏 Olá! Sou a Assistente Fé e Vida.
+
+            <br><br>
+
+            Posso ajudar com:
+
+            <br><br>
+
+            📖 Bíblia<br>
+            ⛪ Horários dos cultos<br>
+            📍 Endereço<br>
+            🙏 Oração<br>
+            📻 Rádio<br>
+            📱 Aplicativo
+
+        </div>
+
+    </div>
+
+    <div id="iaRodape">
+
+        <input
+        type="text"
+        id="iaPergunta"
+        placeholder="Digite sua pergunta...">
+
+        <button id="iaEnviar">
+            Enviar
+        </button>
+
+    </div>
+
+</div>
 
     <script src="script.js"></script>
+<script src="respostas.js"></script>
+<script src="animacoes.js"></script>
+<script src="assistente.js"></script>
 
-    <script>
+<script>
+const musica = document.getElementById("musicaFundo");
 
-        const musica = document.getElementById("musicaFundo");
+musica.volume = 0.15;
+musica.loop = true;
 
-        musica.volume = 0.15;
-        musica.loop = true;
+function iniciarMusica() {
+    musica.play().catch(() => {});
+}
 
-        function iniciarMusica() {
-            musica.play().catch(() => {});
-        }
-
-        window.addEventListener("load", iniciarMusica);
-        document.addEventListener("click", iniciarMusica, { once: true });
-
-    </script>
+window.addEventListener("load", iniciarMusica);
+document.addEventListener("click", iniciarMusica, { once: true });
+</script>
 
 </body>
-
 </html>
