@@ -1,601 +1,474 @@
 
-/* =====================================================
-   RESET
-===================================================== */
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Igreja Batista Fé e Vida</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="imagens/logo.png" alt="Logo Igreja Batista Fé e Vida">
+        <div>
+            <h1>Igreja Batista Fé e Vida</h1>
+            <p>Uma igreja para toda a família</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#cultos">Cultos</a>
+    <a href="#ministerios">Ministérios</a>
+    <a href="#teologia">🎓 Formação Teológica</a>
+    <a href="#radio">📻 Rádio FM</a>
+    <a href="#dizimos">💛 Dízimos e Ofertas</a>
+    <a href="#oracao">Oração</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="inicio" class="banner">
+    <div class="banner-texto">
+        <p>Seja muito bem-vindo à Igreja Batista Fé e Vida. Um lugar de fé, amor, comunhão e transformação.</p>
+
+        <a href="#cultos" class="botao">Conheça nossos cultos</a>
+
+        <br><br>
+
+        <a href="https://play.google.com/store/apps/details?id=edgar.santos542026"
+           target="_blank" class="botao">
+            📲 Baixar Aplicativo da Rádio
+        </a>
+    </div>
+</section>
+
+<main>
+
+<!-- SOBRE -->
+
+<section id="sobre">
+    <h2>Quem Somos</h2>
+
+    <p>
+        Somos uma igreja comprometida em anunciar o Evangelho de Jesus Cristo,
+        discipular vidas, fortalecer famílias e levar esperança através da
+        Palavra de Deus.
+    </p>
+</section>
+
+<!-- CULTOS -->
+
+<section id="cultos">
+    <h2>Horários dos Cultos</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Domingo</h3>
+            <p>🕖 07:00</p>
+            <p>🕘 09:00</p>
+            <p>🕕 18:00</p>
+        </div>
+
+        <div class="card">
+            <h3>Quarta-feira</h3>
+            <p>🕖 07:00</p>
+            <p>🕑 14:00</p>
+            <p>🕖 19:00</p>
+        </div>
+
+        <div class="card">
+            <h3>Sexta-feira</h3>
+            <p>🕖 07:00</p>
+            <p>🕑 14:00</p>
+            <p>🕖 19:00</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- MINISTÉRIOS -->
+
+<section id="ministerios">
+    <h2>Nossos Ministérios</h2>
+
+    <ul>
+        <li>Louvor e Adoração</li>
+        <li>Intercessão</li>
+        <li>Jovens</li>
+        <li>Crianças</li>
+        <li>Casais</li>
+        <li>Evangelismo</li>
+    </ul>
+</section>
+
+<!-- FORMAÇÃO TEOLÓGICA -->
+
+<section id="teologia">
+
+    <h2>🎓 Escola de Formação Teológica Fé e Vida</h2>
+
+    <p>
+        Quer conhecer melhor a Bíblia e aprofundar seus conhecimentos sobre
+        a fé cristã? Participe da nossa jornada introdutória de formação
+        teológica.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📖 Quatro aulas gratuitas</h3>
+            <p>
+                Conheça os fundamentos do estudo bíblico antes de decidir continuar.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Material de apoio</h3>
+            <p>
+                Conteúdo de estudo e referências bíblicas para acompanhar as aulas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Aberto a todos</h3>
+            <p>
+                Você não precisa ser membro da igreja para participar.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>📅 Quando serão as aulas?</h2>
+
+    <p><strong>Todas as quintas-feiras, às 19h.</strong></p>
+
+    <p>As aulas serão presenciais na Igreja Batista Fé e Vida.</p>
+
+    <h2>📘 Jornada introdutória: quatro aulas gratuitas</h2>
+
+    <div class="cards">
+
+        <!-- AULA 1 -->
+
+        <div class="card">
+            <h3>Aula 1 - Bibliologia</h3>
+
+            <p>
+                Conheça a Bíblia, sua organização e sua importância
+                para a fé cristã.
+            </p>
+
+            <a
+                href="materiais/Apostila_Aula_01_Bibliologia_Fe_e_Vida.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao"
+                style="display:inline-block; margin-top:15px; padding:12px 16px;">
+                📖 ACESSAR APOSTILA
+            </a>
+        </div>
+
+        <!-- AULA 2 -->
+
+        <div class="card">
+            <h3>Aula 2 - A formação da Bíblia</h3>
+
+            <p>
+                Uma introdução à formação, transmissão e preservação
+                das Escrituras.
+            </p>
+
+            <a
+                href="materiais/Apostila_Aula_02_Formacao_da_Biblia_Fe_e_Vida.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao"
+                style="display:inline-block; margin-top:15px; padding:12px 16px;">
+                📖 ACESSAR APOSTILA
+            </a>
+        </div>
+
+        <!-- AULA 3 -->
+
+        <div class="card">
+            <h3>Aula 3 - História de Israel</h3>
+
+            <p>
+                Conheça momentos importantes da trajetória
+                do povo de Israel.
+            </p>
+
+            <a
+                href="materiais/Apostila_Aula_03_Historia_de_Israel_Fe_e_Vida.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao"
+                style="display:inline-block; margin-top:15px; padding:12px 16px;">
+                📖 ACESSAR APOSTILA
+            </a>
+        </div>
+
+        <!-- AULA 4 -->
+
+        <div class="card">
+            <h3>Aula 4 - Hermenêutica</h3>
+
+            <p>
+                Aprenda princípios básicos para compreender
+                e interpretar a Bíblia.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>📌 E depois das quatro aulas?</h2>
+
+    <p>
+        Ao terminar a jornada introdutória gratuita, quem desejar poderá
+        continuar os estudos na Escola de Formação Teológica.
+    </p>
+
+    <p>
+        <strong>Mensalidade prevista para a continuidade: R$ 25,00.</strong>
+        A participação na etapa seguinte é opcional. Não há obrigação
+        de matrícula ou de continuidade após as quatro aulas gratuitas.
+    </p>
+
+    <p>
+        <strong>Quer participar das quatro aulas gratuitas?</strong>
+        Entre em contato pelo WhatsApp para solicitar sua inscrição
+        e receber as orientações sobre a primeira aula.
+    </p>
+
+    <a
+        href="https://wa.me/5571984160706?text=Ol%C3%A1!%20Tenho%20interesse%20em%20participar%20da%20Escola%20de%20Forma%C3%A7%C3%A3o%20Teol%C3%B3gica%20F%C3%A9%20e%20Vida.%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20gratuitas."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="botao">
+        📲 QUERO PARTICIPAR DAS AULAS GRATUITAS
+    </a>
+
+    <p>
+        <small>
+            A Escola de Formação Teológica é uma atividade diferente
+            da Escola Bíblica Dominical (EBD).
+        </small>
+    </p>
+
+</section>
+
+<!-- RÁDIO -->
+
+<section id="radio">
+    <h2>📻 Rádio Batista Fé e Vida</h2>
+
+    <p>
+        Leve a Palavra de Deus com você onde estiver.
+        Baixe gratuitamente nosso aplicativo.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📲 Aplicativo Oficial</h3>
+            <p>Ouça nossa programação 24 horas por dia.</p>
+            <br>
+
+            <a
+                href="https://play.google.com/store/apps/details?id=edgar.santos542026"
+                target="_blank"
+                class="botao">
+                BAIXAR NA PLAY STORE
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🎙 Programação</h3>
+            <p>Louvores</p>
+            <p>Pregações</p>
+            <p>Estudos Bíblicos</p>
+            <p>Oração</p>
+            <p>Transmissões ao Vivo</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- DÍZIMOS E OFERTAS -->
+
+<section id="dizimos">
+    <h2>💛 Dízimos e Ofertas</h2>
+
+    <p>
+        Sua fidelidade e generosidade ajudam a manter a obra de Deus,
+        apoiar projetos missionários e levar o Evangelho a mais pessoas.
+    </p>
+
+    <p>
+        <strong>
+            "Cada um contribua segundo propôs no coração,
+            não com tristeza ou por obrigação, pois Deus ama
+            quem dá com alegria."
+        </strong>
+        <br>
+        <em>2 Coríntios 9:7</em>
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📱 PIX da Igreja</h3>
+            <p><strong>Chave PIX</strong></p>
+            <p id="chavePix">71988375157</p>
+            <br>
+            <button onclick="copiarPix()">📋 Copiar Chave PIX</button>
+        </div>
+
+        <div class="card">
+            <h3>🙏 Obrigado pela sua contribuição</h3>
+            <p>
+                Cada oferta ajuda a anunciar o Evangelho,
+                manter a igreja e alcançar vidas para Cristo.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ORAÇÃO -->
+
+<section id="oracao">
+    <h2>Pedido de Oração</h2>
+
+    <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+
+        <textarea
+            rows="6"
+            placeholder="Escreva aqui seu pedido de oração"
+            required>
+        </textarea>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato">
+    <h2>Contato</h2>
+
+    <p><strong>📍 Endereço:</strong></p>
+
+    <p>
+        Avenida Dorival Caymmi, 23<br>
+        Itapuã - Salvador / BA
+    </p>
+
+    <p><strong>📱 WhatsApp:</strong></p>
+
+    <p>
+        <a href="https://wa.me/5571988375157" target="_blank">
+            (71) 98837-5157
+        </a>
+    </p>
+</section>
+
+</main>
+
+<!-- RODAPÉ -->
+
+<footer>
+    <p>© 2026 Igreja Batista Fé e Vida</p>
+    <p>Todos os direitos reservados.</p>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+
+<a
+    href="https://wa.me/5571988375157"
+    class="whatsapp"
+    target="_blank"
+    title="Fale conosco pelo WhatsApp">
+    💬
+</a>
+
+<!-- MÚSICA DE FUNDO -->
+
+<audio id="musicaFundo" autoplay loop>
+    <source src="audio/fundo.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<!-- ASSISTENTE IA -->
+
+<div id="iaChamada">
+    Eu sou o Pastor IA.<br>
+    Posso ajudar!
+</div>
+
+<div id="iaBotao">🤖</div>
+
+<div id="iaJanela">
+
+    <div id="iaTopo">
+        Assistente Fé e Vida
+        <span id="fecharIA">✖</span>
+    </div>
+
+    <div id="iaMensagens">
+        <div class="iaMensagem">
+            🙏 Olá! Sou a Assistente Fé e Vida.<br><br>
+
+            Posso ajudar com:<br><br>
+
+            📖 Bíblia<br>
+            ⛪ Horários dos cultos<br>
+            📍 Endereço<br>
+            🙏 Oração<br>
+            📻 Rádio<br>
+            📱 Aplicativo
+        </div>
+    </div>
+
+    <div id="iaRodape">
+        <input
+            type="text"
+            id="iaPergunta"
+            placeholder="Digite sua pergunta...">
+
+        <button id="iaEnviar">Enviar</button>
+    </div>
+
+</div>
+
+<!-- ARQUIVOS JAVASCRIPT -->
+
+<script src="script.js"></script>
+<script src="respostas.js"></script>
+<script src="animacoes.js"></script>
+<script src="assistente.js"></script>
+
+<script>
+const musica = document.getElementById("musicaFundo");
+
+musica.volume = 0.15;
+musica.loop = true;
+
+function iniciarMusica(){
+    musica.play().catch(() => {});
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
-    color:#333;
-    line-height:1.6;
-}
-
-/* =====================================================
-   CABEÇALHO
-===================================================== */
-
-header{
-    background:#002b5c;
-    color:#fff;
-    padding:20px 0;
-}
-
-.logo-area{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    gap:20px;
-    padding:0 20px;
-}
-
-.logo-area img{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.logo-area h1{
-    font-size:40px;
-    margin-bottom:8px;
-}
-
-.logo-area p{
-    font-size:18px;
-}
-
-/* =====================================================
-   MENU
-===================================================== */
-
-nav{
-    position:sticky;
-    top:0;
-    background:#004b96;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    z-index:999;
-}
-
-nav a{
-    color:#fff;
-    text-decoration:none;
-    padding:18px 22px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    background:#f4b400;
-    color:#002b5c;
-}
-
-nav a.ativo{
-    background:#f4b400;
-    color:#002b5c;
-    border-radius:5px;
-}
-
-/* =====================================================
-   BANNER
-===================================================== */
-
-.banner{
-    height:90vh;
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("imagens/fachada.png");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:#fff;
-}
-
-.banner-texto{
-    max-width:850px;
-    padding:20px;
-}
-
-.banner h2{
-    font-size:58px;
-    margin-bottom:20px;
-}
-
-.banner p{
-    font-size:22px;
-    margin-bottom:35px;
-}
-
-/* =====================================================
-   BOTÕES
-===================================================== */
-
-.botao{
-    display:inline-block;
-    margin:8px;
-    padding:18px 35px;
-    background:#f4b400;
-    color:#002b5c;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:50px;
-    transition:.3s;
-}
-
-.botao:hover{
-    background:#fff;
-    transform:translateY(-3px);
-}
-
-/* =====================================================
-   CONTEÚDO
-===================================================== */
-
-main{
-    max-width:1200px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-section{
-    background:#fff;
-    margin-bottom:55px;
-    padding:45px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:all .3s ease;
-    scroll-margin-top:90px;
-}
-
-section:hover{
-    transform:translateY(-3px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-section h2{
-    color:#002b5c;
-    margin-bottom:25px;
-    font-size:32px;
-}
-
-section p{
-    line-height:1.8;
-    margin-bottom:18px;
-}
-
-/* =====================================================
-   CARDS
-===================================================== */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#004b96;
-    color:#fff;
-    padding:30px;
-    border-radius:12px;
-    text-align:center;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    margin-bottom:15px;
-    color:#f4b400;
-}
-
-.card p{
-    color:#fff;
-}
-
-/* =====================================================
-   CURSO DE TEOLOGIA
-===================================================== */
-
-#teologia{
-    background:#fff;
-    padding:50px;
-    margin-bottom:55px;
-}
-
-#teologia h2{
-    color:#002b5c;
-    text-align:center;
-    margin-bottom:30px;
-}
-
-#teologia > p{
-    text-align:center;
-    max-width:850px;
-    margin:0 auto 25px;
-}
-
-#teologia .cards{
-    margin-top:30px;
-}
-
-#teologia .card{
-    background:linear-gradient(135deg,#004b96,#002b5c);
-}
-
-#teologia .card h3{
-    color:#f4b400;
-}
-
-/* =====================================================
-   FORMULÁRIO
-===================================================== */
-
-input,
-textarea{
-    width:100%;
-    padding:15px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    margin-bottom:15px;
-    font-size:16px;
-}
-
-textarea{
-    resize:vertical;
-    min-height:150px;
-}
-
-button{
-    background:#004b96;
-    color:#fff;
-    border:none;
-    padding:15px 30px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-    transition:.3s;
-}
-
-button:hover{
-    background:#f4b400;
-    color:#002b5c;
-}
-
-/* =====================================================
-   RÁDIO
-===================================================== */
-
-#radio{
-    text-align:center;
-}
-
-#radio p{
-    font-size:18px;
-    line-height:1.8;
-}
-
-#radio .card{
-    background:linear-gradient(135deg,#004b96,#002b5c);
-}
-
-#radio .card h3{
-    color:#f4b400;
-}
-
-#radio .botao{
-    margin-top:20px;
-}
-
-/* =====================================================
-   RODAPÉ
-===================================================== */
-
-footer{
-    background:#002b5c;
-    color:#fff;
-    text-align:center;
-    padding:12px 20px;
-    font-size:15px;
-}
-
-footer p{
-    margin:3px 0;
-}
-
-/* =====================================================
-   BOTÃO WHATSAPP
-===================================================== */
-
-.whatsapp{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    background:#25D366;
-    color:#fff;
-    text-decoration:none;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:36px;
-    box-shadow:0 8px 20px rgba(0,0,0,.35);
-    transition:.3s;
-    z-index:9999;
-}
-
-.whatsapp:hover{
-    transform:scale(1.1);
-}
-
-/* =====================================================
-   ASSISTENTE FÉ E VIDA
-===================================================== */
-
-#iaBotao{
-    position:fixed;
-    right:25px;
-    bottom:110px;
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    background:#004b96;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:34px;
-    cursor:pointer;
-    box-shadow:0 8px 20px rgba(0,0,0,.35);
-    transition:.3s;
-    z-index:99999;
-}
-
-#iaBotao:hover{
-    transform:scale(1.12);
-}
-
-#iaJanela{
-    position:fixed;
-    right:25px;
-    bottom:120px;
-    width:340px;
-    height:500px;
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    display:none;
-    box-shadow:0 12px 35px rgba(0,0,0,.30);
-    z-index:99999;
-}
-
-#iaTopo{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    height:60px;
-    background:#004b96;
-    color:#fff;
-    font-size:22px;
-    font-weight:bold;
-    border-radius:15px 15px 0 0;
-}
-
-#fecharIA{
-    position:absolute;
-    right:20px;
-    cursor:pointer;
-    font-size:20px;
-}
-
-#iaMensagens{
-    height:300px;
-    overflow-y:auto;
-    padding:15px;
-    background:#f7f7f7;
-}
-
-.iaMensagem{
-    background:#fff;
-    padding:12px;
-    margin-bottom:12px;
-    border-radius:10px;
-    box-shadow:0 2px 6px rgba(0,0,0,.08);
-    line-height:1.6;
-}
-
-#iaRodape{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:10px;
-    height:70px;
-    border-top:1px solid #ddd;
-    background:#fff;
-}
-
-#iaPergunta{
-    flex:1;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    outline:none;
-    font-size:15px;
-}
-
-#iaPergunta:focus{
-    border-color:#004b96;
-}
-
-#iaEnviar{
-    background:#004b96;
-    color:#fff;
-    border:none;
-    padding:12px 18px;
-    border-radius:8px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-#iaEnviar:hover{
-    background:#002b5c;
-}
-
-/* =====================================================
-   RESPONSIVIDADE
-===================================================== */
-
-@media (max-width:768px){
-
-    .logo-area{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .logo-area h1{
-        font-size:30px;
-    }
-
-    .logo-area p{
-        font-size:16px;
-    }
-
-    nav a{
-        padding:12px;
-        font-size:14px;
-    }
-
-    .banner{
-        height:75vh;
-    }
-
-    .banner h2{
-        font-size:36px;
-    }
-
-    .banner p{
-        font-size:18px;
-    }
-
-    .botao{
-        display:block;
-        width:100%;
-        margin-top:15px;
-        text-align:center;
-    }
-
-    main{
-        padding:35px 15px;
-    }
-
-    section{
-        padding:25px;
-        margin-bottom:35px;
-    }
-
-    #teologia{
-        padding:30px 20px;
-        margin-bottom:35px;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .whatsapp{
-        width:60px;
-        height:60px;
-        font-size:30px;
-        right:20px;
-        bottom:20px;
-    }
-
-    #iaBotao{
-        width:60px;
-        height:60px;
-        font-size:30px;
-        right:20px;
-        bottom:95px;
-    }
-
-    #iaJanela{
-        width:95%;
-        height:75vh;
-        right:2.5%;
-        bottom:90px;
-    }
-
-    #iaMensagens{
-        height:calc(75vh - 120px);
-    }
-
-    #iaChamada{
-        right:10px;
-        font-size:16px;
-    }
-
-}
-
-/* =====================================================
-   ANIMAÇÕES
-===================================================== */
-
-#iaChamada{
-    position:fixed;
-    right:18px;
-    bottom:185px;
-    color:#FFD700;
-    font-size:20px;
-    font-weight:bold;
-    text-align:center;
-    text-shadow:2px 2px 6px rgba(0,0,0,.7);
-    z-index:99999;
-    animation:pulsarIA 1.5s infinite;
-}
-
-@keyframes pulsarIA{
-    0%{
-        transform:scale(1);
-    }
-    50%{
-        transform:scale(1.08);
-    }
-    100%{
-        transform:scale(1);
-    }
-}
-
-/* =====================================================
-   CHAVE PIX
-===================================================== */
-
-#chavePix{
-    font-size:22px;
-    font-weight:bold;
-    color:#FFD700;
-    background:#002b5c;
-    padding:12px;
-    border-radius:8px;
-    margin:15px 0;
-    text-align:center;
-}
+window.addEventListener("load", iniciarMusica);
+
+document.addEventListener("click", iniciarMusica, { once: true });
+</script>
+</body>
+</html>
