@@ -1,4 +1,4 @@
-```javascript
+
 const respostasIA = {
 
     saudacao: [
@@ -111,4 +111,3 @@ const respostasIA = {
     ]
 
 };
-```
