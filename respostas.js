@@ -1,3 +1,4 @@
+```javascript
 const respostasIA = {
 
     saudacao: [
@@ -85,11 +86,24 @@ const respostasIA = {
     ],
 
     ansiedade: [
-        "📖 Filipenses 4:6-7<br><br>Não andeis ansiosos por coisa alguma."
+        "Sinto muito que você esteja enfrentando essa ansiedade. Quando a preocupação e a angústia parecem tomar conta de tudo, é difícil encontrar descanso. Você não precisa enfrentar tudo de uma vez.<br><br>📖 A Palavra de Deus diz: <b>“Não andeis ansiosos por coisa alguma” (Filipenses 4:6).</b><br><br>Vamos dar um passo de cada vez. Se quiser, me conte o que está deixando seu coração tão inquieto. Estou aqui para conversar com você."
     ],
 
     tristeza: [
-        "📖 Salmos 34:18<br><br>Perto está o Senhor dos que têm o coração quebrantado."
+        "Sinto muito que você esteja passando por tantos problemas. Às vezes, quando enfrentamos muitas dificuldades ao mesmo tempo, parece que perdemos as forças e não sabemos para onde ir. Mas você não está sozinho.<br><br>A Palavra de Deus diz: <b>“Perto está o Senhor dos que têm o coração quebrantado” (Salmo 34:18).</b><br><br>Deus conhece sua dor e não se esqueceu de você. Se quiser, pode me contar um pouco do que está acontecendo. Estou aqui para conversar com você."
+    ],
+
+    depressao: [
+        "Sinto muito que você esteja vivendo um momento tão difícil. Quando a tristeza permanece, tudo pode parecer pesado, até mesmo as coisas mais simples do dia a dia. Você não precisa fingir que está bem, nem enfrentar tudo sozinho.<br><br>Deus conhece seu coração e sua dor. <b>Você tem valor, sua vida importa e não precisa passar por isso sozinho.</b><br><br>Se puder, procure também conversar com alguém de confiança e um profissional de saúde. Se quiser, pode me contar como tem se sentido. Estou aqui para ouvir você e também podemos buscar apoio espiritual."
+    ],
+
+    crise: [
+        "❤️ Quero que você saiba que sua vida é muito importante e que não precisa enfrentar esse momento sozinho. Sinto muito que esteja sentindo tanta dor a ponto de pensar em desistir.<br><br><b>Por favor, procure ficar perto de alguém de confiança agora e não fique sozinho.</b> Se estiver pensando em tirar sua vida ou sentir que pode fazer algo contra si mesmo, afaste-se de objetos ou meios que possam machucá-lo e procure atendimento de emergência imediatamente. Ligue para o SAMU (192) ou vá a uma emergência.<br><br>Você também pode conversar gratuitamente com o CVV pelo telefone <b>188</b>.<br><br>Quero convidar você a procurar nosso Suporte Espiritual para conversar e receber acolhimento. Você pode falar conosco pelo WhatsApp:<br><br><a href='https://wa.me/5571988375157' target='_blank'>📱 Conversar com o Suporte Espiritual</a><br><br><b>Por favor, não fique sozinho neste momento. Sua vida importa.</b>"
+    ],
+
+    // Compatibilidade com regras antigas do assistente.js
+    suicidio: [
+        "❤️ Quero que você saiba que sua vida é muito importante e que não precisa enfrentar esse momento sozinho. Sinto muito que esteja sentindo tanta dor a ponto de pensar em desistir.<br><br><b>Por favor, procure ficar perto de alguém de confiança agora e não fique sozinho.</b> Se estiver pensando em tirar sua vida ou sentir que pode fazer algo contra si mesmo, afaste-se de objetos ou meios que possam machucá-lo e procure atendimento de emergência imediatamente. Ligue para o SAMU (192) ou vá a uma emergência.<br><br>Você também pode conversar gratuitamente com o CVV pelo telefone <b>188</b>.<br><br>Quero convidar você a procurar nosso Suporte Espiritual para conversar e receber acolhimento. Você pode falar conosco pelo WhatsApp:<br><br><a href='https://wa.me/5571988375157' target='_blank'>📱 Conversar com o Suporte Espiritual</a><br><br><b>Por favor, não fique sozinho neste momento. Sua vida importa.</b>"
     ],
 
     default: [
@@ -97,3 +111,4 @@ const respostasIA = {
     ]
 
 };
+```

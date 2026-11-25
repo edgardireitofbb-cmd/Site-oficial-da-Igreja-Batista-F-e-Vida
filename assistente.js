@@ -225,9 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // IDENTIFICAR PERGUNTA
     // =========================
 
-    function identificarResposta(original) {
-
-        const texto = normalizar(original);
+    
 
         // ENDEREÇO
         if (contem(texto, [
@@ -291,53 +289,172 @@ document.addEventListener("DOMContentLoaded", function () {
         ])) {
             return respostaBase("oracao");
         }
-
-        // TRISTEZA
+        // RISCO DE SUICÍDIO: PRIORIDADE MÁXIMA
         if (contem(texto, [
-            "estou triste",
-            "muito triste",
-            "tristeza",
-            "coracao partido",
-            "estou chorando",
-            "perdi alguem",
-            "luto",
-            "estou sofrendo",
-            "me sinto sozinho",
-            "me sinto sozinha"
+            "quero morrer",
+            "queria morrer",
+            "nao quero mais viver",
+            "não quero mais viver",
+            "quero tirar minha vida",
+            "tirar minha propria vida",
+            "tirar a propria vida",
+            "pensando em suicidio",
+            "penso em suicidio",
+            "vou me matar",
+            "quero me matar",
+            "acabar com minha vida",
+            "acabar com tudo",
+            "queria desaparecer para sempre",
+            "nao aguento mais viver",
+            "não aguento mais viver",
+            "minha vida nao vale a pena",
+            "minha vida não vale a pena"
         ])) {
-            return respostaBase("tristeza");
+            return respostaBase("suicidio");
+        }
+               // 🚨 CRISE / PENSAMENTOS SUICIDAS (PRIORIDADE MÁXIMA)
+        if (contem(texto, [
+            "quero morrer",
+            "queria morrer",
+            "quero me matar",
+            "vou me matar",
+            "pensando em me matar",
+            "penso em me matar",
+            "pensando em suicidio",
+            "penso em suicidio",
+            "suicidio",
+            "tirar minha vida",
+            "acabar com minha vida",
+            "nao quero mais viver",
+            "não quero mais viver",
+            "nao aguento mais viver",
+            "nao aguento continuar",
+            "queria desaparecer",
+            "quero desaparecer",
+            "minha vida nao vale a pena",
+            "minha vida não vale a pena",
+            "desistir de viver"
+        ])) {
+            return respostaBase("crise");
         }
 
-        // ANSIEDADE
+        // 🫂 DEPRESSÃO
+        if (contem(texto, [
+            "depressao",
+            "depressivo",
+            "depressiva",
+            "estou deprimido",
+            "estou deprimida",
+            "me sinto deprimido",
+            "me sinto deprimida",
+            "sem vontade de viver",
+            "sem vontade de fazer nada",
+            "perdi a vontade de viver",
+            "perdi a vontade de tudo",
+            "triste todos os dias",
+            "triste todo dia",
+            "vazio por dentro",
+            "sinto um vazio",
+            "nada tem sentido",
+            "nada faz sentido",
+            "nao tenho prazer em nada",
+            "não tenho prazer em nada"
+        ])) {
+            return respostaBase("depressao");
+        }
+
+        // 😟 ANSIEDADE
         if (contem(texto, [
             "ansioso",
             "ansiosa",
             "ansiedade",
             "angustia",
+            "angustiado",
+            "angustiada",
             "preocupado",
             "preocupada",
             "preocupacao",
             "nao consigo dormir",
+            "não consigo dormir",
             "estou aflito",
             "estou aflita",
             "nervoso",
-            "nervosa"
+            "nervosa",
+            "crise de ansiedade",
+            "ataque de panico",
+            "ataque de pânico",
+            "meu coracao acelerado",
+            "coração acelerado",
+            "pensamentos acelerados"
         ])) {
             return respostaBase("ansiedade");
         }
+// RISCO DE SUICÍDIO: PRIORIDADE MÁXIMA
+if (contem(texto, [
+    "quero morrer",
+    "queria morrer",
+    "nao quero mais viver",
+    "nao quero viver",
+    "quero tirar minha vida",
+    "pensando em suicidio",
+    "penso em suicidio",
+    "vou me matar",
+    "quero me matar",
+    "pensando em me matar",
+    "nao aguento mais viver"
+])) {
+    return respostaBase("crise");
+}
 
-        // MEDO
+// DEPRESSÃO
+if (contem(texto, [
+    "depressao",
+    "estou deprimido",
+    "estou deprimida",
+    "me sinto deprimido",
+    "me sinto deprimida",
+    "sem vontade de fazer nada",
+    "me sinto vazio",
+    "me sinto vazia"
+])) {
+    return respostaBase("depressao");
+}
+        // 😔 TRISTEZA
+        if (contem(texto, [
+            "estou triste",
+            "muito triste",
+            "tristeza",
+            "coracao partido",
+            "coração partido",
+            "estou chorando",
+            "perdi alguem",
+            "perdi alguém",
+            "luto",
+            "estou sofrendo",
+            "me sinto sozinho",
+            "me sinto sozinha",
+            "desanimado",
+            "desanimada",
+            "abatido",
+            "abatida"
+        ])) {
+            return respostaBase("tristeza");
+        }
+
+        // 😨 MEDO
         if (contem(texto, [
             "estou com medo",
             "tenho medo",
             "inseguro",
             "insegura",
             "inseguranca",
-            "receio"
+            "insegurança",
+            "receio",
+            "estou assustado",
+            "estou assustada"
         ])) {
             return respostaBase("medo");
         }
-
         // CULTOS
         if (contem(texto, [
             "culto",
