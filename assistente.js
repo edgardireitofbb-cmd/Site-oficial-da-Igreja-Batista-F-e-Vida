@@ -637,11 +637,23 @@ if (contem(texto, [
         }
 
         // SAUDAÇÕES
-        if (
-            /^(oi|ola|bom dia|boa tarde|boa noite|a paz|paz|paz do senhor|deus abencoe|tudo bem|como vai|como voce esta)(\s.*)?$/.test(texto)
-        ) {
-            return respostaBase("saudacao");
-        }
+      
+    // SAUDAÇÕES
+    if (contem(texto, [
+        "oi",
+        "ola",
+        "bom dia",
+        "boa tarde",
+        "boa noite",
+        "a paz",
+        "paz do senhor",
+        "deus abencoe",
+        "tudo bem",
+        "como vai"
+    ])) {
+        return respostaBase("saudacao");
+    }
+
 
         // RESPOSTA PADRÃO
         return respostaBase("default");
